@@ -1,0 +1,12 @@
+FROM amazonlinux:latest
+
+RUN yum install -y python27-devel python27-virtualenv python27-pip python27-numpy gcc gcc-c++ wget zip yum-utils findutils
+
+# Mock current AWS Lambda docker image
+# Find complete list of package https://gist.github.com/vincentsarago/acb33eb9f0502fcd38e0feadfe098eb7
+RUN  yum install -y libjpeg-devel libpng-devel libcurl-devel ImageMagick-devel.x86_64
+
+RUN pip install -U pip
+
+# Some python modules needs numpy (sources) and cython
+RUN pip install cython numpy --no-binary numpy
