@@ -2,7 +2,7 @@
 
 How to create powerful AWS lambda python function that fits in a 250Mb package
 
-More info: https://blog.mapbox.com/
+More info: https://blog.mapbox.com/aws-lambda-python-magic-e0f6a407ffc6
 
 ##### Requirement
   - Docker (https://docs.docker.com/install/)
